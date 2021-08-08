@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -45,8 +45,8 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -260,6 +260,7 @@ Navbar
   -ms-flex-align: center;
   align-items: center;
   background: var(--clr-grey-1);
+  background: var(--clr-forth);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -470,6 +471,7 @@ Hero
 
 .hero {
   background: var(--clr-grey-1);
+  background: var(--clr-forth);
 }
 
 .hero-center {
@@ -505,7 +507,7 @@ Hero
   }
 
   .hero-img::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -548,6 +550,10 @@ About
   gap: 3rem 2rem;
 }
 
+.about-center p {
+  letter-spacing: 2px;
+}
+
 .about-img {
   justify-self: center;
 }
@@ -578,6 +584,7 @@ Services
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--clr-grey-1);
 }
 
 .service .underline {
@@ -593,11 +600,41 @@ Services
   height: 0.1rem;
 }
 
+.service h4 {
+  color: var(--clr-grey-1);
+}
+
 .service p {
   color: var(--clr-grey-1);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+  letter-spacing: 2px;
+}
+
+.service hr {
+  color: var(--clr-grey-1);
+}
+
+.service-ul {
+  margin-top: 1rem;
+  color: var(--clr-grey-1);
+  text-align: left;
+}
+
+.service:hover .service-ul {
+  color: var(--clr-white);
+}
+
+.service-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.service-flex ul li {
+  display: flex;
+  align-items: center;
+  gap: 0 0.4rem;
 }
 
 .service:hover {
@@ -605,7 +642,9 @@ Services
   color: var(--clr-white);
 }
 
-.service:hover p {
+.service:hover p,
+.service:hover h4,
+.service:hover .service-icon {
   color: var(--clr-white);
 }
 
@@ -613,13 +652,20 @@ Services
   background: var(--clr-white);
 }
 
+.hidden {
+  display: none;
+}
+
+.show .visable {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .services-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
+    display: flex;
+    align-items: center;
+    height: 425px;
+    gap: 0 2rem;
   }
 }
 
@@ -687,7 +733,7 @@ Projects
 }
 
 .project::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -730,8 +776,8 @@ Projects
     grid-template-rows: repeat(200px, 200px);
     gap: 1rem;
     grid-template-areas:
-      "a b b"
-      "a c d";
+      'a b b'
+      'a c d';
   }
 
   .project-img,
@@ -800,7 +846,7 @@ Connect
 }
 
 .connect::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1173,7 +1219,7 @@ Single Page
 ===============
 */
 .single-page {
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
 }
 
 .single-page h1 {
@@ -1253,7 +1299,7 @@ Projects Page
 */
 .projects-hero {
   height: 40vh;
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
   display: grid;
   place-items: center;
 }
@@ -1272,6 +1318,8 @@ Projects Page
 .project-container img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  height: 207px;
+  object-fit: cover;
 }
 
 .project-container {
@@ -1343,13 +1391,15 @@ Projects Page
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+  display: flex;
+  gap: 0 0.4rem;
 }
 
 .project-footer a:hover {
   color: var(--clr-primary);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 676px) {
   .projects-page-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
