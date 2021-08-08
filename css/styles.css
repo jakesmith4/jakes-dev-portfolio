@@ -622,7 +622,7 @@ Services
   text-align: left;
 }
 
-.service:hover .service-ul {
+.color .service-ul {
   color: var(--clr-white);
 }
 
@@ -637,18 +637,18 @@ Services
   gap: 0 0.4rem;
 }
 
-.service:hover {
+.color .service {
   background: var(--clr-grey-1);
   color: var(--clr-white);
 }
 
-.service:hover p,
-.service:hover h4,
-.service:hover .service-icon {
+.color p,
+.color h4,
+.color .service-icon {
   color: var(--clr-white);
 }
 
-.service:hover .underline {
+.color .underline {
   background: var(--clr-white);
 }
 

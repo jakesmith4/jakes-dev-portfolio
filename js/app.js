@@ -28,5 +28,6 @@ serviceLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     e.currentTarget.childNodes[1].classList.toggle('show');
+    e.currentTarget.classList.toggle('color');
   });
 });
