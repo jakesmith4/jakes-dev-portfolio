@@ -613,7 +613,7 @@ Services
 }
 
 .service hr {
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
 }
 
 .color .service hr {
@@ -641,8 +641,9 @@ Services
   gap: 0 0.4rem;
 }
 
-.click-more {
+.service .click-more {
   margin: 1.3rem 0 0;
+  color: var(--clr-white);
 }
 
 .color .service {
