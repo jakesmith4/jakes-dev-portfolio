@@ -29,5 +29,6 @@ serviceLinks.forEach(function (link) {
     e.preventDefault();
     e.currentTarget.childNodes[1].classList.toggle('show');
     e.currentTarget.classList.toggle('color');
+    e.currentTarget.classList.toggle('click');
   });
 });
