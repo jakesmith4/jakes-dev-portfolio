@@ -610,6 +610,8 @@ Services
   -o-transition: var(--transition);
   transition: var(--transition);
   letter-spacing: 2px;
+  max-width: 327px;
+  margin: 0 auto 1.25rem;
 }
 
 .service hr {
@@ -624,6 +626,10 @@ Services
   margin-top: 1rem;
   color: var(--clr-grey-1);
   text-align: left;
+}
+
+.service-ul li {
+  transition: var(--transition);
 }
 
 .color .service-ul {
@@ -675,16 +681,17 @@ Services
 
 @media screen and (min-width: 768px) {
   .services-center {
-    display: flex;
-    align-items: center;
-    height: 425px;
-    gap: 0 2rem;
+    height: 815px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1072px) {
   .services-center {
     grid-template-columns: repeat(3, 1fr);
+    height: 400px;
   }
 }
 
