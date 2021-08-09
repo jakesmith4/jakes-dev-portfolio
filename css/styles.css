@@ -871,23 +871,24 @@ Connect
   color: var(--clr-white);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
+  opacity: 0.6;
   -webkit-clip-path: polygon(
     0% 0%,
     100% 0%,
-    100% 80%,
-    75% 80%,
+    100% 85%,
+    75% 85%,
     75% 100%,
-    50% 80%,
-    0% 80%
+    50% 85%,
+    0% 85%
   );
   clip-path: polygon(
     0% 0%,
     100% 0%,
-    100% 80%,
-    75% 80%,
+    100% 85%,
+    75% 85%,
     75% 100%,
-    50% 80%,
-    0% 80%
+    50% 85%,
+    0% 85%
   );
 }
 
