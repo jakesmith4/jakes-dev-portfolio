@@ -1153,12 +1153,12 @@ Blog
   place-items: center;
 }
 
-.card:hover .card-front {
+.card-flip .card-front-flip {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.card:hover .card-back {
+.card-flip .card-back-flip {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
 }

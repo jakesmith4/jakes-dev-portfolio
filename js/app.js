@@ -4,7 +4,6 @@ const closeBtn = document.querySelector('#close-btn');
 const sidebar = document.querySelector('#sidebar');
 const date = document.querySelector('#date');
 const serviceLinks = document.querySelectorAll('.service-link');
-console.log(serviceLinks);
 // add fixed class to navbar
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 80) {
@@ -33,6 +32,7 @@ serviceLinks.forEach(function (link) {
   });
 });
 
+// ************* TOGGLE SERVICES *************
 const serviceLinkA = document.querySelector('.service-link-1');
 const serviceLinkB = document.querySelector('.service-link-2');
 const serviceLinkC = document.querySelector('.service-link-3');
@@ -80,4 +80,27 @@ serviceLinkC.addEventListener('click', function () {
   } else {
     serviceTextC.textContent = `I do all my web development Optimised for mobile and desktop. When your site is complete it will be mobile and desktop friendly`;
   }
+});
+
+// ************* CARD FLIP ***************
+const cardFlipLink = document.querySelectorAll('.card-flip-link');
+const cardFlipBackLink = document.querySelectorAll('.card-flip-back-link');
+
+cardFlipLink.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const card =
+      e.currentTarget.parentElement.parentElement.parentElement.parentElement;
+    card.classList.add('card-flip');
+    console.log(card);
+  });
+});
+
+cardFlipBackLink.forEach(function (linkA) {
+  linkA.addEventListener('click', function (e) {
+    e.preventDefault();
+    const card = e.currentTarget.parentElement.parentElement;
+    card.classList.remove('card-flip');
+    console.log(card);
+  });
 });
