@@ -518,7 +518,6 @@ Hero
 }
 
 .hero-photo {
-  max-width: 25rem;
   max-height: 30rem;
   -o-object-fit: cover;
   object-fit: cover;
@@ -547,6 +546,10 @@ About
 .about-center {
   display: grid;
   gap: 3rem 2rem;
+}
+
+.about-photo {
+  border-radius: var(--radius);
 }
 
 .about-center p {
@@ -649,6 +652,7 @@ Services
 .service .click-more {
   margin: 1.3rem 0 0;
   color: var(--clr-white);
+  font-size: 0.8rem;
 }
 
 .color .service {
@@ -703,6 +707,7 @@ Projects
   width: 85vw;
   max-width: 30rem;
   margin: 0 auto;
+  letter-spacing: 2px;
 }
 
 .project {
@@ -830,27 +835,7 @@ Connect
   min-height: 40vh;
   position: relative;
   padding: 10rem 0 5rem 0;
-  margin: 5rem 0;
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 10%,
-    100% 90%,
-    70% 100%,
-    30% 100%,
-    0 90%,
-    0 10%
-  );
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 10%,
-    100% 90%,
-    70% 100%,
-    30% 100%,
-    0 90%,
-    0 10%
-  );
+  margin: 5rem 0 0;
 }
 
 .video-container {
