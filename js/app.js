@@ -90,7 +90,8 @@ cardFlipLink.forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const card =
-      e.currentTarget.parentElement.parentElement.parentElement.parentElement;
+      e.currentTarget.parentElement.parentElement.parentElement.parentElement
+        .parentElement;
     card.classList.add('card-flip');
     console.log(card);
   });
@@ -99,7 +100,7 @@ cardFlipLink.forEach(function (link) {
 cardFlipBackLink.forEach(function (linkA) {
   linkA.addEventListener('click', function (e) {
     e.preventDefault();
-    const card = e.currentTarget.parentElement.parentElement;
+    const card = e.currentTarget.parentElement.parentElement.parentElement;
     card.classList.remove('card-flip');
     console.log(card);
   });

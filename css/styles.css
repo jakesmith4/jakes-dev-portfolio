@@ -1149,8 +1149,28 @@ Blog
   color: var(--clr-white);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  display: grid;
-  place-items: center;
+}
+
+.card-back h4 {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.card-back p {
+  padding: 1rem 3rem;
+  color: var(--clr-white);
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+.back-links {
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.back-links a {
+  color: white;
 }
 
 .card-flip .card-front-flip {
@@ -1176,11 +1196,14 @@ Blog
 }
 
 .card-footer {
-  display: grid;
+  /* display: grid;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  align-items: center; */
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .card-footer img {
@@ -1199,6 +1222,11 @@ Blog
   justify-self: end;
   margin-right: 1rem;
   font-size: 0.85rem;
+}
+
+.card-footer a {
+  text-transform: capitalize;
+  color: var(--clr-white);
 }
 
 @media screen and (min-width: 576px) {
