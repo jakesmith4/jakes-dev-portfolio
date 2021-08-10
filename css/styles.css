@@ -1426,6 +1426,10 @@ About Page
   letter-spacing: 0.5px;
 }
 
+.expect-info li i {
+  margin-right: 4px;
+}
+
 @media screen and (min-width: 576px) {
   .expect-center {
     display: grid;
