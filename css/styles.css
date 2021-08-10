@@ -12,26 +12,32 @@ Variables
 */
 :root {
   /* My Personal Colors */
-  --clr-primary: hsl(153, 87%, 27%);
   --clr-primary-a: hsl(135, 100%, 60%);
   --clr-secondary: hsl(193, 93%, 46%);
   --clr-thirdary: hsl(325, 14%, 67%);
   --clr-forth: hsl(220, 24%, 24%);
-  --clr-black: hsl(180, 100%, 7%);
+  --clr-black: #002424;
   --clr-primary-light: hsl(123, 87%, 91%);
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(43, 86%, 17%);
-  --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
-  --clr-primary-4: hsl(42, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-seconday-100: #cfd6d6;
+  --clr-secondary-200: #9ba9a9;
+  --clr-secondary-300: #687d7d;
+  --clr-secondary-400: #345050;
+  --clr-secondary-500: #002424;
+  --clr-secondary-600: #001d1d;
+  --clr-secondary-700: #001515;
+  --clr-secondary-800: #000e0e;
+  --clr-secondary-900: #000707;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(108, 90%, 70%);
-  --clr-primary-7: hsl(43, 90%, 76%);
-  --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-100: #d4e9df;
+  --clr-primary-200: #a1cfba;
+  --clr-primary-300: #6eb595;
+  --clr-primary-400: #3c9b70;
+  --clr-primary-500: #09814b;
+  --clr-primary-600: #07663c;
+  --clr-primary-700: #054c2c;
+  --clr-primary-800: #03311d;
+  --clr-primary-900: #02170d;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -143,7 +149,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -181,7 +187,7 @@ p {
 }
 
 .current {
-  border-bottom: 2px solid var(--clr-primary);
+  border-bottom: 2px solid var(--clr-primary-500);
   padding-bottom: 4px;
 }
 
@@ -209,7 +215,7 @@ p {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   margin-left: auto;
   margin-right: auto;
 }
@@ -240,12 +246,12 @@ Navbar
   display: inline-block;
   white-space: nowrap;
   color: var(--clr-white);
-  border: 2px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary-500);
   padding: 0.2rem 0.5rem;
 }
 
 .nav-logo span {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 .nav-links {
@@ -283,7 +289,7 @@ Navbar
 .nav-btn {
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   font-size: 2rem;
   cursor: pointer;
   justify-self: end;
@@ -314,7 +320,7 @@ Navbar
   }
 
   .nav-links a:hover {
-    color: var(--clr-primary);
+    color: var(--clr-primary-500);
   }
 
   .nav-center {
@@ -381,7 +387,7 @@ Sidebar
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   letter-spacing: var(--spacing);
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -405,7 +411,7 @@ Sidebar
 }
 
 .social-icons a {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   font-size: 1.6rem;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -436,7 +442,7 @@ Sidebar
 }
 
 .hero .header-social-icons {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   font-size: 1.5rem;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -455,7 +461,7 @@ Hero
 ===============
 */
 .hero h1 {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 .hero .underline {
@@ -510,7 +516,7 @@ Hero
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 0.25rem solid var(--clr-primary);
+    border: 0.25rem solid var(--clr-primary-500);
     left: 2rem;
     top: 2rem;
     border-radius: var(--radius);
@@ -573,7 +579,7 @@ Services
 ===============
 */
 .service {
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
@@ -712,7 +718,7 @@ Projects
 
 .project {
   position: relative;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   border-radius: var(--radius);
   margin-bottom: 2rem;
 }
@@ -867,7 +873,7 @@ Connect
 }
 
 .video-banner {
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   color: var(--clr-white);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
@@ -928,7 +934,7 @@ Skills
 .skill p {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 .skill-container {
@@ -945,7 +951,7 @@ Skills
   left: 0;
   width: 50%;
   height: 100%;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   border-radius: var(--radius);
 }
 
@@ -1021,7 +1027,7 @@ Timeline
 }
 
 .timeline-item {
-  border-top: 2px dashed var(--clr-primary);
+  border-top: 2px dashed var(--clr-primary-500);
   margin: 0;
   padding: 4rem 2rem;
   position: relative;
@@ -1032,7 +1038,7 @@ Timeline
 }
 
 .timeline-item:nth-child(even) {
-  border-left: 2px dashed var(--clr-primary);
+  border-left: 2px dashed var(--clr-primary-500);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   margin-right: 2rem;
@@ -1040,7 +1046,7 @@ Timeline
 }
 
 .timeline-item:nth-child(odd) {
-  border-right: 2px dashed var(--clr-primary);
+  border-right: 2px dashed var(--clr-primary-500);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   margin-left: 2rem;
@@ -1063,7 +1069,7 @@ Timeline
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin-bottom: 0;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   width: 2rem;
   height: 2rem;
   display: -webkit-box;
@@ -1107,7 +1113,7 @@ Blog
 }
 
 .card-front {
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
 }
 
 .card-front h4 {
@@ -1256,7 +1262,7 @@ Footer
 }
 
 .footer-icons a {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 .footer-icons a:hover {
@@ -1280,7 +1286,7 @@ Single Page
 }
 
 .single-page h1 {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 .page-info {
@@ -1289,7 +1295,7 @@ Single Page
 
 .page-info a {
   text-transform: uppercase;
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -1310,7 +1316,7 @@ About Page
 
 .about-me-center a {
   letter-spacing: 2px;
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   transition: var(--transition);
 }
 
@@ -1356,28 +1362,54 @@ About Page
 }
 
 .tech-card {
-  border: 2px solid var(--clr-grey-1);
+  border: 2px solid var(--clr-primary-600);
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
-  outline: 2px solid var(--clr-primary);
-  outline-offset: 4px;
+  border-radius: var(--radius);
+  background: var(--clr-secondary-200);
 }
 
 .tech-header {
   text-align: center;
 }
 
-.tech-header h3 {
-  background: var(--clr-primary);
-  padding: 0.1rem 0.2rem;
-  border: 2px solid var(--clr-grey-1);
+.tech-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.tech-card .underline {
+  height: 2px;
+  width: 3rem;
 }
 
 .tech-card span {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.5rem;
-  background: var(--clr-primary);
-  border: 2px solid var(--clr-grey-1);
+  background: var(--clr-primary-500);
+  border: 2px solid var(--clr-primary-600);
+  border-radius: var(--radius);
+  padding: 0.1rem 0.2rem;
+  font-size: 0.9rem;
+}
+
+.tech-card p {
+  padding: 0 1rem;
+  letter-spacing: 1.5px;
+  min-height: 236px;
+  color: var(--clr-primary-600);
+}
+
+.icon-container {
+  display: flex;
+  gap: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+  color: var(--clr-primary-600);
 }
 
 /*
@@ -1393,7 +1425,7 @@ Projects Page
 }
 
 .projects-hero .section-title {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
   margin-bottom: 0;
 }
 
@@ -1426,7 +1458,7 @@ Projects Page
   height: 4rem;
   display: grid;
   place-items: center;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   border-radius: 50%;
   color: var(--clr-white);
   border: 0.375rem solid var(--clr-grey-1);
@@ -1437,8 +1469,8 @@ Projects Page
 
 .project-icon:hover {
   background: var(--clr-grey-1);
-  border-color: var(--clr-primary);
-  color: var(--clr-primary);
+  border-color: var(--clr-primary-500);
+  color: var(--clr-primary-500);
 }
 
 .project-details {
@@ -1484,7 +1516,7 @@ Projects Page
 }
 
 .project-footer a:hover {
-  color: var(--clr-primary);
+  color: var(--clr-primary-500);
 }
 
 @media screen and (min-width: 676px) {
@@ -1523,14 +1555,14 @@ Contact Page
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/contact-img.jpg) no-repeat center/cover;
   min-height: 20rem;
-  border: 2px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary-500);
 }
 
 .form-info h3 {
   color: var(--clr-white);
   text-align: center;
   margin-top: 1rem;
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   padding: 0.3rem 0.6rem;
 }
 
@@ -1561,7 +1593,7 @@ Contact Page
 }
 
 .form {
-  background: var(--clr-primary);
+  background: var(--clr-primary-500);
   padding: 1rem 0.5rem;
   border: 2px solid var(--clr-grey-1);
 }
