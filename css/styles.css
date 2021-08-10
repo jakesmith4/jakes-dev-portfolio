@@ -656,7 +656,7 @@ Services
 }
 
 .color .service {
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
   color: var(--clr-white);
 }
 
@@ -1098,7 +1098,7 @@ Blog
 }
 
 .card {
-  height: 27.5rem;
+  height: 28.6rem;
   position: relative;
   /* Talk Later */
   -webkit-perspective: 1500px;
@@ -1145,7 +1145,7 @@ Blog
 }
 
 .card-back {
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
   color: var(--clr-white);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -1159,12 +1159,12 @@ Blog
 .card-back p {
   padding: 1rem 3rem;
   color: var(--clr-white);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 0.95rem;
+  min-height: 325px;
 }
 
 .back-links {
-  margin-top: 4.5rem;
   display: flex;
   justify-content: space-around;
 }
@@ -1196,11 +1196,6 @@ Blog
 }
 
 .card-footer {
-  /* display: grid;
-  grid-template-columns: auto 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1229,7 +1224,7 @@ Blog
   color: var(--clr-white);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 650px) {
   .blog-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1241,7 +1236,6 @@ Blog
   .blog-center {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
   }
 }
 
@@ -1310,6 +1304,37 @@ Single Page
 About Page
 ===============
 */
+.about-me-center p {
+  letter-spacing: 2px;
+}
+
+.about-me-center a {
+  letter-spacing: 2px;
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+
+.about-me-center a:hover {
+  color: var(--clr-white);
+}
+
+.about-page-img {
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+}
+
+@media screen and (min-width: 576px) {
+  .about-me-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .about-page-img {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .tech-center {
     display: grid;
