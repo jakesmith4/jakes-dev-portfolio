@@ -690,7 +690,7 @@ Services
 
 @media screen and (min-width: 768px) {
   .services-center {
-    height: 815px;
+    height: 900px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -1397,7 +1397,7 @@ About Page
 .tech-card p {
   padding: 0 1rem;
   letter-spacing: 1.5px;
-  min-height: 236px;
+  min-height: 330px;
   color: var(--clr-primary-600);
 }
 
@@ -1410,6 +1410,29 @@ About Page
 .icon-container i {
   font-size: 1.5rem;
   color: var(--clr-primary-600);
+}
+
+/* What To Expect */
+.expect-img img {
+  border-radius: var(--radius);
+}
+
+.expect-info h3 {
+  margin-top: 1rem;
+}
+
+.expect-info li {
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 576px) {
+  .expect-center {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 /*
@@ -1430,7 +1453,7 @@ Projects Page
 }
 
 .single-project {
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
   border-radius: var(--radius);
   margin-bottom: 2rem;
 }
@@ -1468,7 +1491,7 @@ Projects Page
 }
 
 .project-icon:hover {
-  background: var(--clr-grey-1);
+  background: var(--clr-forth);
   border-color: var(--clr-primary-500);
   color: var(--clr-primary-500);
 }
