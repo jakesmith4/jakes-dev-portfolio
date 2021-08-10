@@ -1397,8 +1397,11 @@ About Page
 .tech-card p {
   padding: 0 1rem;
   letter-spacing: 1.5px;
-  min-height: 330px;
+  min-height: 225px;
   color: var(--clr-primary-600);
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-container {
@@ -1427,7 +1430,7 @@ About Page
 }
 
 .expect-info li i {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 @media screen and (min-width: 576px) {
@@ -1505,28 +1508,39 @@ Projects Page
   color: var(--clr-white);
 }
 
+.project-header {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .project-details h4 {
   margin-top: 0.5rem;
 }
 
 .project-details p {
   min-height: 144px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 0 0.5rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: var(--clr-grey-1);
 }
 
-.project-footer span {
+.footer-wrap {
   background: var(--clr-grey-1);
+  padding: 0.15rem 0.25rem;
+}
+
+.project-footer span {
   color: var(--clr-white);
-  border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 1.4rem;
