@@ -94,7 +94,7 @@ a {
   display: block;
 } */
 
-img {
+img:not(.form-spree) {
   width: 100%;
   display: block;
 }
@@ -1735,6 +1735,26 @@ Contact Page
 .form-control textarea {
   outline-color: var(--clr-grey-1);
   resize: none;
+}
+
+.submit-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formspree-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  color: var(--clr-white);
+  letter-spacing: 1px;
+}
+
+.form-spree {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 576px) {
