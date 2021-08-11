@@ -169,7 +169,7 @@ p {
 }
 
 .btn:hover {
-  background: var(--clr-primary-a);
+  background: var(--clr-primary-400);
 }
 
 .btn-secondary {
@@ -177,7 +177,7 @@ p {
 }
 
 .btn-secondary:hover {
-  background: hsl(209, 28%, 39%);
+  background: var(--clr-grey-2);
 }
 
 .btn-tertiary {
@@ -1753,8 +1753,8 @@ Contact Page
 
 .form-spree {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid var(--clr-white);
 }
 
