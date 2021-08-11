@@ -877,7 +877,7 @@ Connect
   color: var(--clr-white);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -1447,8 +1447,8 @@ About Page
 Projects Page
 ===============
 */
+/* Hero */
 .projects-hero {
-  height: 40vh;
   background: var(--clr-forth);
   display: grid;
   place-items: center;
@@ -1456,9 +1456,27 @@ Projects Page
 
 .projects-hero .section-title {
   color: var(--clr-primary-500);
-  margin-bottom: 0;
 }
 
+.projects-hero-img img {
+  border-radius: var(--radius);
+}
+
+.projects-hero-info h3 {
+  margin-top: 1rem;
+  color: var(--clr-grey-6);
+}
+
+@media screen and (min-width: 576px) {
+  .projects-hero-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+}
+
+/* Projects */
 .single-project {
   background: var(--clr-forth);
   border-radius: var(--radius);
@@ -1691,6 +1709,8 @@ Contact Page
   border-color: var(--clr-grey-1);
   border-radius: var(--radius);
   letter-spacing: 1px;
+  font-size: 0.87rem;
+  font-family: inherit;
 }
 
 .form-control input:focus,
