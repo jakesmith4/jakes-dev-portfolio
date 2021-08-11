@@ -4,6 +4,13 @@ const closeBtn = document.querySelector('#close-btn');
 const sidebar = document.querySelector('#sidebar');
 const date = document.querySelector('#date');
 const serviceLinks = document.querySelectorAll('.service-link');
+
+// FormSpree Clear
+const form = document.querySelector('form');
+window.onbeforeunload = () => {
+  form.reset();
+};
+
 // add fixed class to navbar
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 80) {
@@ -105,9 +112,3 @@ cardFlipBackLink.forEach(function (linkA) {
     console.log(card);
   });
 });
-
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName('form')) {
-    form.reset();
-  }
-};
