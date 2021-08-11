@@ -367,9 +367,9 @@ Sidebar
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-  -webkit-transform: translateY(-110%);
-  -ms-transform: translateY(-110%);
-  transform: translateY(-110%);
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
 }
 
 .show-sidebar {
