@@ -12,10 +12,10 @@ Variables
 */
 :root {
   /* My Personal Colors */
-  --clr-primary-a: hsl(135, 100%, 60%);
-  --clr-secondary: hsl(193, 93%, 46%);
-  --clr-thirdary: hsl(325, 14%, 67%);
-  --clr-forth: hsl(220, 24%, 24%);
+  --clr-primary-a: #33ff66;
+  --clr-secondary: #08b3e2;
+  --clr-thirdary: #b79fad;
+  --clr-forth: #2f384c;
   --clr-black: #002424;
   --clr-primary-light: hsl(123, 87%, 91%);
   /* dark shades of primary color*/
@@ -38,6 +38,8 @@ Variables
   --clr-primary-700: #054c2c;
   --clr-primary-800: #03311d;
   --clr-primary-900: #02170d;
+  /*  */
+
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -265,7 +267,6 @@ Navbar
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: var(--clr-grey-1);
   background: var(--clr-forth);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -1128,10 +1129,12 @@ Blog
   max-width: 17rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
+  margin-bottom: 0;
+  min-height: 145px;
 }
 
 .card .blog-name {
-  margin-top: 2px;
   margin-left: 10px;
 }
 
@@ -1205,6 +1208,12 @@ Blog
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--clr-white);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
 }
 
 .card-footer img {
@@ -1214,7 +1223,7 @@ Blog
   object-fit: cover;
   border-radius: 50%;
   border: 1.5px solid var(--clr-grey-1);
-  margin-left: 1rem;
+  margin-right: 10px;
 }
 
 .card-footer p {
@@ -1223,6 +1232,7 @@ Blog
   justify-self: end;
   margin-right: 1rem;
   font-size: 0.85rem;
+  margin-bottom: 0;
 }
 
 .card-footer a {
@@ -1465,6 +1475,10 @@ Projects Page
 .projects-hero-info h3 {
   margin-top: 1rem;
   color: var(--clr-grey-6);
+}
+
+.projects-hero p {
+  letter-spacing: 1px;
 }
 
 @media screen and (min-width: 576px) {
