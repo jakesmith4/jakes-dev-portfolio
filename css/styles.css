@@ -875,7 +875,7 @@ Connect
 .video-banner {
   background: var(--clr-primary-500);
   color: var(--clr-white);
-  padding: 3rem 5rem 12rem 5rem;
+  padding: 3rem 3rem 12rem 3rem;
   text-align: center;
   opacity: 0.7;
   -webkit-clip-path: polygon(
