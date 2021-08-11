@@ -1581,6 +1581,40 @@ Projects Page
 Contact Page
 ===============
 */
+.contact-img img {
+  border-radius: var(--radius);
+}
+
+.contact-info h3,
+.contact-info h4 {
+  color: var(--clr-grey-6);
+}
+
+.contact-info h3 {
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  color: var(--clr-white);
+  letter-spacing: 1px;
+}
+
+.contact-info a {
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 576px) {
+  .contact-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .contact-info h3 {
+    margin-top: 0;
+  }
+}
+
 .form-info {
   margin-bottom: 2rem;
   background: -webkit-gradient(
@@ -1590,13 +1624,14 @@ Contact Page
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../images/contact-img.jpg) no-repeat center/cover;
+    url('../images/contact-img-min.jpg') no-repeat center/cover;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/contact-img.jpg) no-repeat center/cover;
+    url('../images/contact-img-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/contact-img.jpg) no-repeat center/cover;
+    url('../images/contact-img-min.jpg') no-repeat center/cover;
   min-height: 20rem;
   border: 2px solid var(--clr-primary-500);
+  border-radius: var(--radius);
 }
 
 .form-info h3 {
@@ -1637,21 +1672,30 @@ Contact Page
   background: var(--clr-primary-500);
   padding: 1rem 0.5rem;
   border: 2px solid var(--clr-grey-1);
+  border-radius: var(--radius);
 }
 
-.form h3 {
-  text-align: center;
+.form h4 {
   background: hsl(209, 28%, 39%);
   color: var(--clr-white);
-  border: 2px solid var(--clr-grey-1);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.8rem;
+  max-width: 250px;
 }
 
 .form-control input,
 .form-control textarea {
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   border-color: var(--clr-grey-1);
+  border-radius: var(--radius);
+  letter-spacing: 1px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: hsl(209, 28%, 39%);
 }
 
 .form-control textarea {
