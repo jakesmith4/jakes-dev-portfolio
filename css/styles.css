@@ -1755,6 +1755,7 @@ Contact Page
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  border: 1px solid var(--clr-white);
 }
 
 @media screen and (min-width: 576px) {
