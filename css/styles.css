@@ -1320,6 +1320,10 @@ Single Page
 About Page
 ===============
 */
+.about-me-info h3 {
+  color: var(--clr-grey-5);
+}
+
 .about-me-center p {
   letter-spacing: 2px;
 }
